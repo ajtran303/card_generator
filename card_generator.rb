@@ -63,7 +63,7 @@ class CardGenerator
   end
 
   def print_msg
-    puts "Generating #{deck_size} #{"shuffled" if shuffled?} cards in '#{"shuffled_" if @shuffled}#{@style.downcase}_deck#{"s" if @i > 1}.txt'"
+    puts "Generating #{cards_to_print} #{"shuffled" if shuffled?} cards in '#{"shuffled_" if @shuffled}#{@style.downcase}_deck#{"s" if @i > 1}.txt'"
     puts "...."
     puts "Success!"
   end
