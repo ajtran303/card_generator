@@ -83,7 +83,6 @@ class CardGenerator
       else
         puts "Invalid input. #{invalid_counter} attempts remaining!"
         puts "Pick a deck style: [S]tandard / [T]arot Minor Arcana"
-        puts "Press "
         invalid_counter -= 1
         if invalid_counter.zero?
           puts "Goodbye"
