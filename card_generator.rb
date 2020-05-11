@@ -16,11 +16,15 @@ class CardGenerator
     @style = nil
     @shuffled = false
     @deck = []
+    execute #comment out to run tests
+  end
+
+  def execute
     start
     get_style
     get_integer
-    shuffle_prompt # generates decks
-    write_it ### how do you test this??
+    shuffle_prompt
+    write_it
     print_msg
   end
 
@@ -230,5 +234,5 @@ class CardGenerator
 end
 
 # num arg was for writing tests
-# since it is re-assinged don't worry
+# re-assigned interactively
 CardGenerator.new(0)
