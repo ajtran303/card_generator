@@ -101,7 +101,7 @@ class CardGeneratorTest < Minitest::Test
     assert_equal true, @card_generator.numbers.all? {|number| number.class == String}
   end
 
-  def test_it_has_aces_high_in_standard
+  def test_it_has_aces_after_king_in_standard
 
     expected = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace"]
 
@@ -319,7 +319,7 @@ class CardGeneratorTest < Minitest::Test
 
   end
 
-  def test_it_converts_symbols_to_upcase_strings_in_standard_tarot_array
+  def test_it_converts_symbols_to_upcase_strings_in_tarot_deck_array
     expected = [["Ace", "Cup", "1"], ["2", "Cup", "2"], ["3", "Cup", "3"], ["4", "Cup", "4"], ["5", "Cup", "5"], ["6", "Cup", "6"], ["7", "Cup", "7"], ["8", "Cup", "8"], ["9", "Cup", "9"], ["10", "Cup", "10"], ["Knight", "Cup", "11"], ["Jack", "Cup", "12"], ["Queen", "Cup", "13"], ["King", "Cup", "14"], ["Ace", "Wand", "1"], ["2", "Wand", "2"], ["3", "Wand", "3"], ["4", "Wand", "4"], ["5", "Wand", "5"], ["6", "Wand", "6"], ["7", "Wand", "7"], ["8", "Wand", "8"], ["9", "Wand", "9"], ["10", "Wand", "10"], ["Knight", "Wand", "11"], ["Jack", "Wand", "12"], ["Queen", "Wand", "13"], ["King", "Wand", "14"], ["Ace", "Coin", "1"], ["2", "Coin", "2"], ["3", "Coin", "3"], ["4", "Coin", "4"], ["5", "Coin", "5"], ["6", "Coin", "6"], ["7", "Coin", "7"], ["8", "Coin", "8"], ["9", "Coin", "9"], ["10", "Coin", "10"], ["Knight", "Coin", "11"], ["Jack", "Coin", "12"], ["Queen", "Coin", "13"], ["King", "Coin", "14"], ["Ace", "Sword", "1"], ["2", "Sword", "2"], ["3", "Sword", "3"], ["4", "Sword", "4"], ["5", "Sword", "5"], ["6", "Sword", "6"], ["7", "Sword", "7"], ["8", "Sword", "8"], ["9", "Sword", "9"], ["10", "Sword", "10"], ["Knight", "Sword", "11"], ["Jack", "Sword", "12"], ["Queen", "Sword", "13"], ["King", "Sword", "14"]]
 
     deck = CardGenerator.new(1)
