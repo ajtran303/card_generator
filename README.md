@@ -1,4 +1,4 @@
-#card_generator.rb
+# card_generator.rb
 
 Programmatically create a deck of cards from the command line.
 
